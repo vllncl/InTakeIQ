@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>IntakeIQ</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" type="image/png" href="assets/logoappleonly.jpg">
+        <script src="login.js" defer></script>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+        <main>
+            
+            
+            <div class="main-container">
+                <div id="welcome">
+                    <img src="assets/logo.png" alt="IntakeIQ logo" id="logo">
+                    <h1>Welcome to Intake IQ</h1>
+                    <p>Brought to you by 3-STACK</p>
+                    <p>Riya Prasanna, Nicole Villa and Adriana Neyra</p>
+                </div>
+                <div id="about-us">
+                    <div id="aboutus"><h2>About Us</h2></div>
+                    <p>InTakeIQ is designed to make nutrition tracking easy, fast and personalized. Our website allows students to search through
+                        food items through a real-time API, enter the exact number of grams they consumed, calculate the amount of calories and build 
+                        a clear overview of their "Today's Intake". Once their list is complete, they can then generate an AI summary that offers
+                        helpful insight to what they should do next to get to their goal! Our mission is to help students track what they eat 
+                        on a daily basis and offer them tips to reach a healthier and/or desired weight goal.
+
+                    </p>
+                </div>
+                <div id="user-info">
+                    <h2>About You</h2>
+                    <form action="">
+                        <ul>
+                            <li>
+                                <label for="Name">Name</label>
+                                <input type="text" id="name" name="user_name" placeholder="First Name" required/>
+                            </li>
+                            <li>
+                                <label for="age">Age</label>
+                                <input type="number" id="age" name="user_age" required/>
+                            </li>
+                            <li>
+                                <label for="sex">Sex (assigned at birth)</label>
+                            <ul>
+                                <li>
+                                    <input type="radio" id="male" name="user_sex" value="male"/>
+                                    <label for="male">M</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="female" name="user_sex" value="female"/>
+                                    <label for="female">F</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="other" name="user_sex" value="other"/>
+                                    <label for="other">X</label>
+                                </li>
+                            </ul>
+                            </li>
+                        </ul>
+                </div>    
+
+                    </form>
+                <div id="user-stats">
+                    <h2>About You</h2>
+                    <form action="">
+                        <ul>
+                            <li>
+                                <label for="weight">Weight</label>
+                                <input type="number" id="weight" name="user_weight" placeholder="e.g. kg" required/>
+                            </li>
+                            <li>
+                                <label for="height">Height</label>
+                                <input type="number" id="height" name="user_height" placeholder= "e.g. cm" required/>
+                            </li>
+
+                            <li>
+                                <label for="goal">Your Goal</label>
+                                <input type="number" id="goal" name="user_goal" placeholder="e.g. kg" required/>
+                            </li>
+                        </ul>
+                        
+
+                    </form>
+                </div>
+                <div class="arrow-up">
+                    <button id="previous">Previous</button>
+                </div>
+                <div class="next">
+                    <button type="submit" id="next">Next</button>
+                </div>
+            </div> 
+            
+
+    <div class="wrapper">
+        <div class="container-wrapper">
+            <div class="search-container">
+                <h2>Search Food Item</h2>
+                    <div class="autocomplete-item">
+                        <input type="text" id="foodInput" placeholder="Type a food">
+                        <div class="suggestions" id="suggestions"></div>
+                    </div>
+                    <br>
+                    <h2>Grams</h2>
+                    <input type="number" id="grams" placeholder="Enter in grams" min=1 required>
+                    <button id="addToList">Add to List</button>
+            
+            
+                <div class="ai">
+                    <h3>Ai generated summary</h3>
+                    <!--put in p the generated text-->
+                    <p id="summary"></p>
+                </div>
+
+            </div>
+            <div class="list-container">
+                <div class="list">
+                    <h2>Today's Intake</h2>
+                    <p id="instructions">Intructions: When list is completed, click "Generate AI summary" to receive tips on today's intake
+                        and to save your list for today's date.
+                    </p>
+                    <!--inside ul, put the list-->
+                    <ul id="list"></ul>
+                    <div class="list-buttons">
+                    <button type="button" id="clear-list">Clear List</button>
+                    <button type="button" id="generateai">Generate Ai summary</button>
+                    </div>
+                </div>
+            </div>
+        </div>   
+
+        <div class="history">
+            <h2>History</h2>
+            <div id="1">
+                <h3></h3>
+                <p></p>
+            </div>
+            <div id="2">
+                <h3></h3>
+                <p></p>
+            </div>
+                
+            <div id="3">
+                <h3></h3>
+                <p></p>
+            </div> 
+                     
+            <div id="4">
+                <h3></h3>
+                <p></p>
+            </div> 
+            <div id="5">
+                <h3></h3>
+                <p></p>
+            </div>
+                
+            <div id="6">
+                <h3></h3>
+                <p></p>
+            </div>
+            <div id="7">
+                <h3></h3>
+                <p></p>
+            </div>
+            
+        </div>
+            
+        </main>
+    </div>
+	</body>
+</html>
